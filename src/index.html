@@ -7,9 +7,9 @@
     <meta name="description" content="Se lediga platser i vårt digitala parkeringsgarage live. SmartParking AB erbjuder smidig parkering med realtidsuppdaterad karta över lediga rutor.">
 </head>
 <body>
-    <header class="site-header">
-        <h1>
-            <a href="/" class="logo">SmartParking Live</a>
+    <header class="site-header" role="banner">
+        <h1 class="logo">
+            <a href="/" class="logo-link">SmartParking Live</a>
         </h1>
         <nav>
             <ul class="menu-list">
@@ -20,21 +20,27 @@
     </header>
     <main class="content-area">
         <section class="garage-container">
-            <h4 class="garage-headline">Live-vy: Garageplan A</h4>
+            <h2>Live-vy: Garageplan A</h2>
             <p>Klicka på en ruta för att se detaljer.</p>
-            <ul class="floor-layout">
-                <li class="spot">🚗</li>
-                <li class="spot">🚗</li>
-                <li class="spot"></li>
-                <li class="spot">🚗</li>
-            </ul>
+            <div class="floor-layout" aria-live="polite">
+                <button type="button" class="spot" aria-label="Parkeringsruta 1: Upptagen">
+                    <span role="img" aria-label="En röd bil" aria-hidden="true">🚗</span>
+                </button>
+                <button type="button" class="spot" aria-label="Parkeringsruta 2: Upptagen">
+                    <span role="img" aria-label="En röd bil" aria-hidden="true">🚗</span>
+                </button>
+                <button type="button" class="spot" aria-label="Parkeringsruta 3: Ledig"></button>
+                <button type="button" class="spot" aria-label="Parkeringsruta 4: Upptagen">
+                    <span role="img" aria-label="En röd bil" aria-hidden="true">🚗</span>
+                </button>
+            </div>
         </section>
-        <section class="info-sidebar">
-            <h5 class="info-headline">Priser och Regler</h5>
-            <p>Standardtaxa: 20kr/h. Orangea streckade linjer visar zongränsen.</p>
+        <section class="info-sidebar" role="complementary">
+            <h2>Priser och Regler</h2>
+            <p>Standardtaxa: 20 kr/h. Orangea streckade linjer visar zongränsen.</p>
         </section>
     </main>
-    <footer class="footer-area">
+    <footer class="footer-area" role="contentinfo">
         <p><small>&copy; 2026 SmartParking AB</small></p>
     </footer>
     <script type="module" src="/assets/scripts/main.js"></script>
