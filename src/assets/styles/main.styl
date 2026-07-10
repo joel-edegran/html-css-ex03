@@ -24,14 +24,14 @@ body {
 .site-header {
     background-color: #1e293b;
     padding: 1.5rem;
-    text-align: center;
     border-bottom: 2px solid #334155;
 }
 
 .logo
     display: block
+    width: fit-content
     line-height: 1
-    margin-bottom: 0.5em
+    margin: 0 auto 0.5em
     font-size: 2rem
     font-weight: bold
     color: #38bdf8
@@ -79,6 +79,11 @@ body {
     padding: 2rem;
 }
 
+.garage-headline
+    font-size: 1rem
+    margin-block-start: 1.33em
+    margin-block-end: 1.33em
+
 .info-sidebar {
     flex: 1; /* Tar upp mindre plats */
     background-color: #1e293b;
@@ -89,6 +94,12 @@ body {
     color: #475569; 
     border: 1px solid #334155;
 }
+
+.info-headline
+    font-size: 0.83em
+    margin-block-start: 1.67em
+    margin-block-end: 1.67em
+
 
 /* ==========================================================================
    4. GARAGEGOLVET & RUTORNA
@@ -125,3 +136,14 @@ body {
 /* LEDTRÅD TILL ELEVERNA: Här saknas något kritiskt! 
    När man tabbar med tangentbordet syns det inte var man är. 
    De måste lägga till och styla :focus-visible här. */
+
+
+
+/* ==========================================================================
+   6. FOOTER
+   ========================================================================== */
+
+.footer-area
+    text-align: center
+    padding: 2rem 0
+    color: #94a3b8
