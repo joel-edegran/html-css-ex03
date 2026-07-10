@@ -1,41 +1,40 @@
-<!DOCTYPE html>
+<!DOCTYPE html lang="sv">
 <html>
 <head>
     <meta charset="UTF-8">
 </head>
 <body>
-
-    <div id="header-section">
-        <div class="logo">SmartParking Live</div>
-        <div class="menu-links">
-            <a href="#karta">Karta</a><a href="#info">Info</a>
-        </div>
-    </div>
-
-    <div id="content-area">
-        
-        <div class="garage-container">
+    <header class="site-header">
+        <h1>
+            <a href="/" class="logo">SmartParking Live</a>
+        </h1>
+        <nav>
+            <ul class="menu-link-list">
+                <li><a class="menu-link" href="#karta">Karta</a></li>
+                <li><a class="menu-link" href="#info">Info</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content-area">
+        <section class="garage-container">
             <h4>Live-vy: Garageplan A</h4>
             <p>Klicka på en ruta för att se detaljer.</p>
-            
-            <div class="floor-layout">
-                <div class="spot">🚗</div>
-                <div class="spot">🚗</div>
-                <div class="spot"></div> <div class="spot">🚗</div>
-            </div>
-        </div>
-
-        <div class="info-sidebar">
+            <ul class="floor-layout">
+                <li class="spot">🚗</li>
+                <li class="spot">🚗</li>
+                <li class="spot"></li>
+                <li class="spot">🚗</li>
+            </ul>
+        </section>
+        <section class="info-sidebar">
             <h5>Priser och Regler</h5>
             <p>Standardtaxa: 20kr/h. Orangea streckade linjer visar zongränsen.</p>
-        </div>
+        </section>
 
-    </div>
-
-    <div id="footer-area">
+    </main>
+    <footer class="footer-area">
         <p>© 2026 SmartParking AB</p>
-    </div>
-
+    </footer>
     <script type="module" src="/assets/scripts/main.js"></script>
 </body>
 </html>

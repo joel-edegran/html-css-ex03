@@ -21,35 +21,44 @@ body {
 /* ==========================================================================
    2. HEADER & MENY
    ========================================================================== */
-#header-section {
+.site-header {
     background-color: #1e293b;
     padding: 1.5rem;
     text-align: center;
     border-bottom: 2px solid #334155;
 }
 
-.logo {
-    color: #38bdf8;
-    font-size: 2rem;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
-}
+.logo
+    display: block
+    line-height: 1
+    margin-bottom: 0.5em
+    font-size: 2rem
+    font-weight: bold
+    color: #38bdf8
+    text-decoration: none
+    &:hover
+        color: #94a3b8
+
+
+.menu-link-list
+    display: flex
+    justify-content: center
+    gap: 1em
+    list-style: none
 
 /* LEDTRÅD TILL ELEVERNA: Kontrollera avståndet/klickytan här för Lighthouse! */
-.menu-links a {
-    color: #94a3b8;
-    text-decoration: none;
-    font-weight: bold;
-}
+.menu-link
+    color: #94a3b8
+    text-decoration: none
+    font-weight: bold
 
-.menu-links a:hover {
-    color: #38bdf8;
-}
+    &:hover
+        color: #38bdf8
 
 /* ==========================================================================
    3. LAYOUT (FLEXBOX)
    ========================================================================== */
-#content-area {
+.content-area {
     max-width: 900px;
     width: 100%;
     margin: 2rem auto;
