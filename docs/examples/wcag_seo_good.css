@@ -1,0 +1,123 @@
+/* ==========================================================================
+   1. GLOBAL RESET & BASSTIL (Box-sizing sparar layout-huvudvärk)
+   ========================================================================== */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0f172a; /* Modern mörkblå bakgrund */
+    color: #f8fafc;            /* Ljus text (ger hög och godkänd WCAG-kontrast) */
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+/* ==========================================================================
+   2. SEMANTISKA ELEMENT & MENY
+   ========================================================================== */
+header {
+    background-color: #1e293b;
+    padding: 1.5rem;
+    text-align: center;
+    border-bottom: 2px solid #334155;
+}
+
+h1 {
+    color: #38bdf8; /* Ljusblå accentfärg */
+    margin: 0 0 1rem 0;
+    font-size: 2.2rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox för menyn */
+    justify-content: center;
+    gap: 1.5rem;   /* Säkerställer tillgängligt avstånd (Target size) mellan länkarna */
+}
+
+nav a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem; /* Ökar den klickbara ytan för fingrar och möss */
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #38bdf8;
+}
+
+main {
+    max-width: 900px;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+/* ==========================================================================
+   3. FLEXBOX GARAGE-LAYOUT
+   ========================================================================== */
+.garage-floor {
+    background-color: #1e293b;
+    border: 4px solid #475569;  /* Fasta pixlar för kanter som inte ska zooma */
+    border-radius: 8px;
+    padding: 2rem;             /* rem för marginaler så det skalar snyggt vid zoom */
+    
+    /* Flexbox aktiveras på själva garagegolvet */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.parking-spot {
+    background-color: #334155;
+    width: 9.5rem;   /* rem gör att rutorna växer i takt med webbläsarens textzoom */
+    height: 6.5rem;
+    cursor: pointer;
+    
+    border: 2px dashed #e3940f; /* Orange, streckad linje för parkeringsrutan */
+    border-radius: 6px;
+
+    /* Intern flexbox för att centrera emojin spikrakt inuti rutan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.parking-spot span {
+    font-size: 2.8rem;
+}
+
+.status-box {
+    background-color: #1e293b;
+    padding: 1rem;
+    border-left: 4px solid #38bdf8;
+    border-radius: 4px;
+}
+
+/* ==========================================================================
+   4. WCAG & TILLGÄNGLIGHET (Fokushantering)
+   ========================================================================== */
+/* Tvingar fram en extremt tydlig, ljusblå fokus-ring när man tabbar med tangentbordet */
+.parking-spot:focus-visible, nav a:focus-visible {
+    outline: 4px solid #38bdf8;
+    outline-offset: 4px;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #64748b;
+    font-size: 0.9rem;
+}

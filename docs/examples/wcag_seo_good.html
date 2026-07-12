@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Smart Garage | Live-karta och lediga platser</title>
+
+    <meta name="description" content="Hitta lediga parkeringsplatser i realtid. Se vår digitala garagekarta med laddstationer och boka din plats direkt.">
+
+    <link rel="stylesheet" href="wcag_seo_good.css">
+</head>
+<body>
+
+    <header>
+        <h1>Smart Garage</h1>
+        <nav aria-label="Huvudmeny">
+            <ul>
+                <li><a href="#karta">Garagekarta</a></li>
+                <li><a href="#status">Anläggningsstatus</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="karta">
+            <h2>Live-karta: Plan 1</h2>
+            <p>Använd tangentbordet (Tab) för att navigera mellan rutorna. Orange streckad linje indikerar en ruta.</p>
+
+            <div class="garage-floor">
+                
+                <button type="button" class="parking-spot" aria-label="Parkeringsruta 1: Upptagen av röd bil">
+                    <span role="img" aria-hidden="true">🚗</span>
+                </button>
+
+                <button type="button" class="parking-spot" aria-label="Parkeringsruta 2: Upptagen av röd bil">
+                    <span role="img" aria-hidden="true">🚗</span>
+                </button>
+
+                <button type="button" class="parking-spot" aria-label="Parkeringsruta 3: Ledig plats">
+                </button>
+
+                <button type="button" class="parking-spot" aria-label="Parkeringsruta 4: Upptagen av röd bil">
+                    <span role="img" aria-hidden="true">🚗</span>
+                </button>
+
+            </div>
+        </section>
+
+        <section id="status">
+            <h2>Anläggningsstatus</h2>
+            
+            <div class="status-box" aria-live="polite">
+                <p>Aktuellt antal lediga platser just nu: <strong>1</strong></p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Smart Garage Systems AB</p>
+    </footer>
+
+</body>
+</html>
