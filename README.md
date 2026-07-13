@@ -51,7 +51,6 @@ The project source code lives in the `src/` directory, while the production-read
       ├── .gitignore
       ├── package-lock.json
       ├── package.json
-      ├── pnpm-lock.yaml        # PNPM lockfile for dependency resolution
       ├── postcss.config.js     # PostCSS configuration (Autoprefixer)
       ├── preview.png           # Project screenshot for repository overview
       ├── README.md             # Project documentation
