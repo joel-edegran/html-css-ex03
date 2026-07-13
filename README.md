@@ -15,7 +15,7 @@ The purpose of this project is to optimize an interactive parking lot dashboard 
 * **HTML5:** Semantic elements (`<button>`, `<main>`, `<section>`) and WAI-ARIA attributes (`aria-label`, `aria-hidden`, `role="img"`) for screen reader compatibility.
 * **Stylus / CSS3:** Responsive styling, custom theme inheritance for text contrast, and dedicated accessibility focus indicators (`:focus-visible`).
 * **Vite:** Local development server and build tool bundling the assets.
-* **Lighthouse / Axe-core:** Automated auditing tools used to continuously verify performance, accessibility, best practices, and SEO compliance.
+* **Lighthouse**: Auditing tool used in the browser to verify performance, accessibility, best practices, and SEO compliance during development.
 
 ## Project Structure
 
